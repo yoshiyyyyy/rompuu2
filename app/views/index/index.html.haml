@@ -1,16 +1,19 @@
-%body
-  .nav-scroller.display-flex.mb-1
-    .initial-header
-      .MLB-font.mx-auto.d-flex.align-items-center WELCOME TO THE OFFICIAL SITE OF ROMPUU.
-    %header.blog-header
-      .py-2.d-flex.justify-content-around.align-items-center
-        %i.color-logo.font-weight-bold.display-4 Rompuu
-        .link
-          %a.text-light{:href => "#"} Top
-          %a.text-light{:href => "#"} Player
-          %a.text-light{:href => "#"} Team
-          %a.text-light{:href => "#"} Stats
-  .container
+.body.bg-black
+  .nav-scroller.mb-5
+    .initial-header.d-flex.align-items-center.bg-ivory
+      .mlb-font.mx-auto WELCOME TO THE OFFICIAL SITE OF ROMPUU.
+    .blog-header.d-flex.align-items-center.justify-content-between.ml-5.mr-5
+      %i.color-logo.display-3 Rom[puu
+      .rompuu-logo.text-light.d-flex.align-items-end
+        .com.text-light rompuu.com
+        .registration ™
+    .navbar.mlb-font.d-inlineflex.justify-content-around
+      %a.text-light{:href => "#"} Top
+      %a.text-light{:href => "#"} Player
+      %a.text-light{:href => "#"} Team
+      %a.text-light{:href => "#"} Stats
+      %a.text-light{:href => "#"} Contact
+  .container.bg-ivory.pt-4
     .bd-example
       #carouselExampleCaptions.carousel.slide{"data-ride" => "carousel"}
         %ol.carousel-indicators
@@ -19,28 +22,76 @@
           %li{"data-slide-to" => "2", "data-target" => "#carouselExampleCaptions"}
         .carousel-inner
           .carousel-item.active
-            %img.d-block.w-100{:alt => "...", width: "90px", height: "220px", :src => "https://lh3.googleusercontent.com/ZRo-yfNQjEBzMSk2QHtRYy0tjaNz2nBwwBFy1Wh6VrF_dzROJkdiiLI9QE3VT8S_76-TEnm3XtFl4aS32Y0XG0MvQlctmDDlaIgjwvzQ7JEQ23kpPkbiPtiLNukjPxMPie4YoH2fRBmXGE71wrqizECHkJjuCCM4BMGkT2ILybI27GA2g4NJ8-eIMk69KAJczWK3PDhBocbEh3XvF38Yt65xFMLC7zmQb-xetr6np2xf6xHytyYUCwSSYbCIGsewslO5EtWKGzfvDOASqrOVkj7pN1zV-IqOaVasmWYKEsCDZkVdEARcAuishCo9t5DM-wnNQNG7mIOtDcQeov8nO_5HjSNR9pXFXaaRasPeRbQuvR_9m_x701HM9VQzzaNpgYFHmwYf9DAa36NuLEfBVFcyMjGWjI7A-TCkcVtYuTCMAzzBtuHgA7Y3JOnGMqCzHqD-kHEfb8NFUNZDtrLVB9HynZIeUFA_rwotQmjuhw1Pgfd0ALDU9PNfvEwuyWKredU3398xi7yywV3FuSsCA-zxkVHnTBu1OtDaiSstqU-iN37P3WBRdUYXyHmaDpOmDD0jJl5upCJlK_Wkr473gnsr0eKevFOw1mikeh364ExXFxKkjDSIJO3wc4hUtvkfzEoZP_Rzx6CUigCielKAlHiwpYB4cJU=w309-h232-no"}/
+            = image_tag 'tsune.jpg', size: "200"
             .carousel-caption.d-none.d-md-block
-              %h5 First slide label
-              %p Nulla vitae elit libero, a pharetra augue mollis interdum.
+              %h1 龍風
+              %p と書いてロンプウって読みます
           .carousel-item
             %img.d-block.w-100{:alt => "...", width: "90px", height: "220px", :src => "https://lh3.googleusercontent.com/ZRo-yfNQjEBzMSk2QHtRYy0tjaNz2nBwwBFy1Wh6VrF_dzROJkdiiLI9QE3VT8S_76-TEnm3XtFl4aS32Y0XG0MvQlctmDDlaIgjwvzQ7JEQ23kpPkbiPtiLNukjPxMPie4YoH2fRBmXGE71wrqizECHkJjuCCM4BMGkT2ILybI27GA2g4NJ8-eIMk69KAJczWK3PDhBocbEh3XvF38Yt65xFMLC7zmQb-xetr6np2xf6xHytyYUCwSSYbCIGsewslO5EtWKGzfvDOASqrOVkj7pN1zV-IqOaVasmWYKEsCDZkVdEARcAuishCo9t5DM-wnNQNG7mIOtDcQeov8nO_5HjSNR9pXFXaaRasPeRbQuvR_9m_x701HM9VQzzaNpgYFHmwYf9DAa36NuLEfBVFcyMjGWjI7A-TCkcVtYuTCMAzzBtuHgA7Y3JOnGMqCzHqD-kHEfb8NFUNZDtrLVB9HynZIeUFA_rwotQmjuhw1Pgfd0ALDU9PNfvEwuyWKredU3398xi7yywV3FuSsCA-zxkVHnTBu1OtDaiSstqU-iN37P3WBRdUYXyHmaDpOmDD0jJl5upCJlK_Wkr473gnsr0eKevFOw1mikeh364ExXFxKkjDSIJO3wc4hUtvkfzEoZP_Rzx6CUigCielKAlHiwpYB4cJU=w309-h232-no"}/
             .carousel-caption.d-none.d-md-block
-              %h5 Second slide label
-              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              %h5 
+              %p 
           .carousel-item
             %img.d-block.w-100{:alt => "...", width: "90px", height: "220px", :src => "https://lh3.googleusercontent.com/ZRo-yfNQjEBzMSk2QHtRYy0tjaNz2nBwwBFy1Wh6VrF_dzROJkdiiLI9QE3VT8S_76-TEnm3XtFl4aS32Y0XG0MvQlctmDDlaIgjwvzQ7JEQ23kpPkbiPtiLNukjPxMPie4YoH2fRBmXGE71wrqizECHkJjuCCM4BMGkT2ILybI27GA2g4NJ8-eIMk69KAJczWK3PDhBocbEh3XvF38Yt65xFMLC7zmQb-xetr6np2xf6xHytyYUCwSSYbCIGsewslO5EtWKGzfvDOASqrOVkj7pN1zV-IqOaVasmWYKEsCDZkVdEARcAuishCo9t5DM-wnNQNG7mIOtDcQeov8nO_5HjSNR9pXFXaaRasPeRbQuvR_9m_x701HM9VQzzaNpgYFHmwYf9DAa36NuLEfBVFcyMjGWjI7A-TCkcVtYuTCMAzzBtuHgA7Y3JOnGMqCzHqD-kHEfb8NFUNZDtrLVB9HynZIeUFA_rwotQmjuhw1Pgfd0ALDU9PNfvEwuyWKredU3398xi7yywV3FuSsCA-zxkVHnTBu1OtDaiSstqU-iN37P3WBRdUYXyHmaDpOmDD0jJl5upCJlK_Wkr473gnsr0eKevFOw1mikeh364ExXFxKkjDSIJO3wc4hUtvkfzEoZP_Rzx6CUigCielKAlHiwpYB4cJU=w309-h232-no"}/
             .carousel-caption.d-none.d-md-block
-              %h5 Third slide label
-              %p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              %h5 
+              %p 
         %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleCaptions", :role => "button"}
           %span.carousel-control-prev-icon{"aria-hidden" => "true"}
           %span.sr-only Previous
         %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleCaptions", :role => "button"}
           %span.carousel-control-next-icon{"aria-hidden" => "true"}
           %span.sr-only Next
-    .nav.nav-tabs
-      .row.mb-4
+    %nav
+      #nav-tab.nav.nav-tabs.pt-4.d-flex.justify-content-around{:role => "tablist"}
+        %a#nav-home-tab.nav-item.nav-link.active{"aria-controls" => "nav-contact", "aria-selected" => "true", "data-toggle" => "tab", :href => "#nav1", :role => "tab"} 全て
+        %a#nav-profile-tab.nav-item.nav-link{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav2", :role => "tab"} アダルト
+        %a#nav-contact-tab.nav-item.nav-link{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav3", :role => "tab"} ヤングアダルト
+        %a#nav-contact-tab.nav-item.nav-link{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav4", :role => "tab"} 中年🔞
+        %a#nav-contact-tab.nav-item.nav-link{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav5", :role => "tab"} スタッフ
+    #nav-tabContent.tab-content
+      #nav1.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab", :role => "tabpanel"} 
+        .col-md-12.border-bottom
+          .flex-md-row.d-flex
+            .card-body.d-flex.align-items-center.col-md-6
+              = image_tag 'tsune.jpg', size: '120x120'
+              .player-number.m-4 
+                %h3 30
+              .text.mb-auto 
+                %span.outfielder 内野手 / 右右  / 40歳
+                %span.name.d-block ツネさん
+                %span.text.d-block 監督 / スカウト 
+                %span.text.d-block 安北中(サッカー部)
+            .card-body.d-flex.align-items-center.col-md-6
+              = image_tag 'tsune.jpg', size: '120x120'
+              .player-number.m-4 
+                %h3 30
+              %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+        .col-md-12
+          .flex-md-row.d-flex
+            .card-body.d-flex.align-items-center.col-md-6
+              = image_tag 'tsune.jpg', size: '120x120'
+              .player-number.m-4 
+                %h3 30
+              .text.mb-auto 
+                %span.outfielder 内野手 / 右右  / 40歳
+                %span.name.d-block ツネさん
+                %span.text.d-block 監督 / スカウト 
+                %span.text.d-block 安北中(サッカー部)
+            .card-body.d-flex.align-items-center.col-md-6
+              = image_tag 'tsune.jpg', size: '120x120'
+              .player-number.m-4 
+                %h3 30
+              %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      #nav2.tab-pane.fade{"aria-labelledby" => "nav-profile-tab", :role => "tabpanel"} 
+        .col-md-6
+          .card.flex-md-row.mb-4
+            .card-body.d-flex.align-items-center
+              = image_tag 'tsune.jpg', size: '120x180'
+              .player-number.m-4 
+                %h3 30
+              %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      #nav3.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
         .col-md-6
           .card.flex-md-row.mb-4
             .card-body.d-flex.align-items-center
@@ -55,6 +106,7 @@
               .player-number.m-4 
                 %h3 30
               %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      #nav4.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
         .col-md-6
           .card.flex-md-row.mb-4
             .card-body.d-flex.align-items-center
@@ -69,6 +121,7 @@
               .player-number.m-4 
                 %h3 30
               %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      #nav5.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
         .col-md-6
           .card.flex-md-row.mb-4
             .card-body.d-flex.align-items-center
@@ -83,21 +136,87 @@
               .player-number.m-4 
                 %h3 30
               %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-        .col-md-6
-          .card.flex-md-row.mb-4
-            .card-body.d-flex.align-items-center
-              = image_tag 'tsune.jpg', size: '120x180'
-              .player-number.m-4 
-                %h3 30
-              %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-        .col-md-6
-          .card.flex-md-row.mb-4
-            .card-body.d-flex.align-items-center
-              = image_tag 'tsune.jpg', size: '120x180'
-              .player-number.m-4 
-                %h3 30
-              %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-  %main.container{:role => "main"}
+
+    -#   %ul.nav.nav-tabs.pt-4.d-flex.justify-content-around
+    -#     %li.nav-item
+    -#       %a.nav-link.active{"data-toggle" => "tab", :href => "#tab1"} 全て
+    -#     %li.nav-item
+    -#       %a.nav-link{"data-toggle" => "tab", :href => "#tab2"} アダルト
+    -#     %li.nav-item
+    -#       %a.nav-link{"data-toggle" => "tab", :href => "#tab3"} ヤングアダルト
+    -#     %li.nav-item
+    -#       %a.nav-link{"data-toggle" => "tab", :href => "#tab4"} 中年🔞
+    -#     %li.nav-item
+    -#       %a.nav-link{"data-toggle" => "tab", :href => "#tab5"} スタッフ
+    -# .tab-content
+    -#   #tab1.tab-pane.active.d-flex
+    -#     .col-md-6
+    -#       .card.flex-md-row.mb-4
+    -#         .card-body.d-flex.align-items-center
+    -#           = image_tag 'tsune.jpg', size: '120x180'
+    -#           .player-number.m-4 
+    -#             %h3 30
+    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+    -#     .col-md-6
+    -#       .card.flex-md-row.mb-4
+    -#         .card-body.d-flex.align-items-center
+    -#           = image_tag 'tsune.jpg', size: '120x180'
+    -#           .player-number.m-4 
+    -#             %h3 30
+    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+    -#   #tab2.tab-pane.d-flex
+    -#     .col-md-6
+    -#       .card.flex-md-row.mb-4
+    -#         .card-body.d-flex.align-items-center
+    -#           = image_tag 'tsune.jpg', size: '120x180'
+    -#           .player-number.m-4 
+    -#             %h3 30
+    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+    -#     .col-md-6
+    -#       .card.flex-md-row.mb-4
+    -#         .card-body.d-flex.align-items-center
+    -#           = image_tag 'tsune.jpg', size: '120x180'
+    -#           .player-number.m-4 
+    -#             %h3 30
+    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+    -#   #tab3.tab-pane.d-flex
+    -#     .col-md-6
+    -#       .card.flex-md-row.mb-4
+    -#         .card-body.d-flex.align-items-center
+    -#           = image_tag 'tsune.jpg', size: '120x180'
+    -#           .player-number.m-4 
+    -#             %h3 30
+    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+    -#     .col-md-6
+    -#       .card.flex-md-row.mb-4
+    -#         .card-body.d-flex.align-items-center
+    -#           = image_tag 'tsune.jpg', size: '120x180'
+    -#           .player-number.m-4 
+    -#             %h3 30
+    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+    -#   #tab4.tab-pane.d-flex
+    -#     .col-md-6
+    -#       .card.flex-md-row.mb-4
+    -#         .card-body.d-flex.align-items-center
+    -#           = image_tag 'tsune.jpg', size: '120x180'
+    -#           .player-number.m-4 
+    -#             %h3 30
+    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+    -#     .col-md-6
+    -#       .card.flex-md-row.mb-4
+    -#         .card-body.d-flex.align-items-center
+    -#           = image_tag 'tsune.jpg', size: '120x180'
+    -#           .player-number.m-4 
+    -#             %h3 30
+    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+    -#   #tab5.tab-pane.d-flex
+    -#     .col-md-6
+    -#       .card.flex-md-row.mb-4
+    -#         .card-body.d-flex.align-items-center
+    -#           = image_tag 'tsune.jpg', size: '120x180'
+    -#           .player-number.m-4 
+    -#             %h3 30
+    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
     .row
       .col-md-8.blog-main
         %h3.pb-3.mb-4.font-italic.border-bottom
@@ -225,36 +344,5 @@
               %a{:href => "#"} Twitter
             %li
               %a{:href => "#"} Facebook
-      / /.blog-sidebar
-    / /.row
-  / /.container
-  %footer.blog-footer
-    %p
-      Blog template built for
-      %a{:href => "https://getbootstrap.com/"} Bootstrap
-      by
-      = succeed "." do
-        %a{:href => "https://twitter.com/mdo"} @mdo
-    %p
-      %a{:href => "#"} Back to top
-  /
-    Bootstrap core JavaScript
-    \==================================================
-  / Placed at the end of the document so the pages load faster
-  %script{:crossorigin => "anonymous", :integrity => "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", :src => "https://code.jquery.com/jquery-3.2.1.slim.min.js"}
-  :javascript
-    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-  %script{:src => "../../assets/js/vendor/popper.min.js"}
-  %script{:src => "../../dist/js/bootstrap.min.js"}
-  %script{:src => "../../assets/js/vendor/holder.min.js"}
-  :javascript
-    Holder.addTheme('thumb', {
-      bg: '#55595c',
-      fg: '#eceeef',
-      text: 'Thumbnail'
-    });
-  / Optional JavaScript
-  / jQuery first, then Popper.js, then Bootstrap JS
-  %script{:crossorigin => "anonymous", :integrity => "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", :src => "https://code.jquery.com/jquery-3.2.1.slim.min.js"}
-  %script{:crossorigin => "anonymous", :integrity => "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"}
-  %script{:crossorigin => "anonymous", :integrity => "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", :src => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"}
+  = render 'footer'
+  

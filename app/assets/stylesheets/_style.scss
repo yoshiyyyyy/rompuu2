@@ -1,24 +1,67 @@
-.initial-header{
+@font-face {
+  font-family: "Graceland Personal Use.ttf";
+  src: url('Fonts/Graceland Personal Use.ttf') format('truetype');
+  font-family: "MLBASTRO";
+  src: url('Fonts/MLBBLOCK.TTF') format('truetype');
+}
+.carousel{
+  width:100%;  /*サイズ指定*/
+  margin:auto;
+}
+.com {
+  border-radius: 8px;
+  border: 1px solid;
+  font-size: 20px;
+  padding: 2px;
+  font-family: 'Century Gothic';
+  font-weight: bold;
+}
+.carousel img{
+  width:100%;
+}
+.bg-black{
+  background-color: #000;
+}
+.bg-ivory{
   background-color: #ececec;
 }
-.color-logo{
+.initial-header {
+  height: 30px;
+}
+.blog-header{
+  height: 80px;
+}
+.color-logo {
   color: #f6f134;
-  text-shadow:5px 5px 0 #11a733, -5px -5px 0 #11a733,
-                -5px 5px 0 #11a733, 5px -5px  #11a733,
-                0px 5px 0 #11a733,  0 -5px 0 #11a733,
-                -5px 0 0 #11a733, 5px 0 0 #11a733;
+  text-shadow: 5px 5px 0 #11a733, -5px -5px 0 #11a733, -5px 5px 0 #11a733, 5px -5px  #11a733, 0px 5px 0 #11a733,  0 -5px 0 #11a733, -5px 0 0 #11a733, 5px 0 0 #11a733;
+  font-family: "Graceland Personal Use";
 }
-.nav-scroller{
-background: #BA0021;
+
+.nav-scroller {
+  background: #BA0021;
 }
-.MLB-font{
-  font-family: "mlb-primary","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+.mlb-font {
   color: #333333;
-  font-size: 11px;
-  font-weight: 450;
-  height: 25px;
-  width: 300px;
+  font-size: 14px;
+  font-family: "MLBBLOCK"
 }
-.domain{
+
+.domain {
   font-family: monospace;
+}
+
+.navbar{
+  background-color: #862633
+}
+
+.nav-link{
+  color: #000;
+}
+.nav-link:hover{
+  color: #000;
+  opacity: 0.7 ;
+}
+.registration{
+  transform:scale(0.5);
 }
