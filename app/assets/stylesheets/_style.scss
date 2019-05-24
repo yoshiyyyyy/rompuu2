@@ -3,6 +3,8 @@
   src: url('Fonts/Graceland Personal Use.ttf') format('truetype');
   font-family: "MLBASTRO";
   src: url('Fonts/MLBBLOCK.TTF') format('truetype');
+  font-family: "CANDY INC.";
+  src: url('Fonts/CANDY___.otf') format('opentype');
 }
 .carousel{
   width:100%;  /*サイズ指定*/
@@ -44,7 +46,7 @@
 .mlb-font {
   color: #333333;
   font-size: 14px;
-  font-family: "MLBBLOCK"
+  font-family: "CANDY INC."
 }
 
 .domain {
@@ -65,3 +67,19 @@
 .registration{
   transform:scale(0.5);
 }
+
+@media (max-width:  575.98px) {
+  .nave-tabs-xs{
+    font-size: 10px;
+  }
+  .nav-link-xs{
+    display: block !important;
+    padding: .5rem 0.3rem !important;
+  }
+ }
+
+  .nav-link-xs{
+      display: block !important;
+      padding: .5rem 0.3rem !important;
+    }
+ 
