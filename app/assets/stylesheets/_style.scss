@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Graceland Personal Use.ttf";
-  src: url('Fonts/Graceland Personal Use.ttf') format('truetype');
+  src: font-url('Fonts/Graceland Personal Use.ttf') format('truetype');
   font-family: "MLBBLOCK";
-  src: url('Fonts/MLBBLOCK.TTF') format('truetype');
+  src: font-url('Fonts/MLBBLOCK.TTF') format('truetype');
   font-family: "CANDY INC.";
-  src: url('Fonts/CANDY___.otf') format('opentype');
+  src: font-url('Fonts/CANDY___.otf') format('opentype');
 }
 .carousel{
   width:100%;  /*サイズ指定*/

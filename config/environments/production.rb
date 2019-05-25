@@ -10,6 +10,12 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
+  # Add the font path
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
+  # Include font files to Assets
+  config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
