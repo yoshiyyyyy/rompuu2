@@ -13,6 +13,9 @@
   width:100%;  /*サイズ指定*/
   margin:auto;
 }
+.body{
+  font-size: 14px;
+}
 .com {
   border-radius: 8px;
   border: 1px solid;
@@ -38,7 +41,7 @@
 }
 .color-logo {
   color: #f6f134;
-  text-shadow: 5px 5px 0 #11a733, -5px -5px 0 #11a733, -5px 5px 0 #11a733, 5px -5px  #11a733, 0px 5px 0 #11a733,  0 -5px 0 #11a733, -5px 0 0 #11a733, 5px 0 0 #11a733;
+  -webkit-text-stroke: 1px #000;
   font-family: "Graceland Personal Use";
 }
 
@@ -85,4 +88,17 @@
       display: block !important;
       padding: .5rem 0.3rem !important;
     }
+
+.player-num{
+  font-family: "Oswald";
+}
+.text-narrow{
+  transform: scale(0.9, 1);
+}
+.font-09{
+  font-size: 0.9rem;
+}
+.font-07{
+  font-size: 0.7rem;
+}
  

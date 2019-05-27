@@ -1,9 +1,9 @@
-.container.bg-black
+.body.bg-black
   .nav-scroller.mb-5
     .initial-header.d-flex.align-items-center.bg-ivory
       .mlb-font.mx-auto WELCOME  TO  THE  OFFICIAL  SITE  OF  ROMPUU.
     .row.blog-header.d-flex.align-items-center.justify-content-between.ml-5.mr-5
-      %i.col-xs-2.color-logo Rom[puu
+      %i.col-4.color-logo Rom[puu
       .col-xs-4.rompuu-logo.text-light.d-flex.align-items-end
         .com.text-light rompuu.com
         .registration ™
@@ -13,314 +13,310 @@
       %a.text-light{:href => "#"} Team
       %a.text-light{:href => "#"} Stats
       %a.text-light{:href => "#"} Contact
-  .bg-ivory.pt-4
-    .bd-example
-      #carouselExampleCaptions.carousel.slide{"data-ride" => "carousel"}
-        %ol.carousel-indicators
-          %li.active{"data-slide-to" => "0", "data-target" => "#carouselExampleCaptions"}
-          %li{"data-slide-to" => "1", "data-target" => "#carouselExampleCaptions"}
-          %li{"data-slide-to" => "2", "data-target" => "#carouselExampleCaptions"}
-        .carousel-inner
-          .carousel-item.active
-            = image_tag 'tsune.jpg', size: "200"
-            .carousel-caption.d-none.d-md-block
-              %h1 龍風
-              %p 
-          .carousel-item
-            %img.d-block.w-100{:alt => "...", width: "90px", height: "220px", :src => "https://lh3.googleusercontent.com/ZRo-yfNQjEBzMSk2QHtRYy0tjaNz2nBwwBFy1Wh6VrF_dzROJkdiiLI9QE3VT8S_76-TEnm3XtFl4aS32Y0XG0MvQlctmDDlaIgjwvzQ7JEQ23kpPkbiPtiLNukjPxMPie4YoH2fRBmXGE71wrqizECHkJjuCCM4BMGkT2ILybI27GA2g4NJ8-eIMk69KAJczWK3PDhBocbEh3XvF38Yt65xFMLC7zmQb-xetr6np2xf6xHytyYUCwSSYbCIGsewslO5EtWKGzfvDOASqrOVkj7pN1zV-IqOaVasmWYKEsCDZkVdEARcAuishCo9t5DM-wnNQNG7mIOtDcQeov8nO_5HjSNR9pXFXaaRasPeRbQuvR_9m_x701HM9VQzzaNpgYFHmwYf9DAa36NuLEfBVFcyMjGWjI7A-TCkcVtYuTCMAzzBtuHgA7Y3JOnGMqCzHqD-kHEfb8NFUNZDtrLVB9HynZIeUFA_rwotQmjuhw1Pgfd0ALDU9PNfvEwuyWKredU3398xi7yywV3FuSsCA-zxkVHnTBu1OtDaiSstqU-iN37P3WBRdUYXyHmaDpOmDD0jJl5upCJlK_Wkr473gnsr0eKevFOw1mikeh364ExXFxKkjDSIJO3wc4hUtvkfzEoZP_Rzx6CUigCielKAlHiwpYB4cJU=w309-h232-no"}/
-            .carousel-caption.d-none.d-md-block
-              %h5 
-              %p 
-          .carousel-item
-            %img.d-block.w-100{:alt => "...", width: "90px", height: "220px", :src => "https://lh3.googleusercontent.com/ZRo-yfNQjEBzMSk2QHtRYy0tjaNz2nBwwBFy1Wh6VrF_dzROJkdiiLI9QE3VT8S_76-TEnm3XtFl4aS32Y0XG0MvQlctmDDlaIgjwvzQ7JEQ23kpPkbiPtiLNukjPxMPie4YoH2fRBmXGE71wrqizECHkJjuCCM4BMGkT2ILybI27GA2g4NJ8-eIMk69KAJczWK3PDhBocbEh3XvF38Yt65xFMLC7zmQb-xetr6np2xf6xHytyYUCwSSYbCIGsewslO5EtWKGzfvDOASqrOVkj7pN1zV-IqOaVasmWYKEsCDZkVdEARcAuishCo9t5DM-wnNQNG7mIOtDcQeov8nO_5HjSNR9pXFXaaRasPeRbQuvR_9m_x701HM9VQzzaNpgYFHmwYf9DAa36NuLEfBVFcyMjGWjI7A-TCkcVtYuTCMAzzBtuHgA7Y3JOnGMqCzHqD-kHEfb8NFUNZDtrLVB9HynZIeUFA_rwotQmjuhw1Pgfd0ALDU9PNfvEwuyWKredU3398xi7yywV3FuSsCA-zxkVHnTBu1OtDaiSstqU-iN37P3WBRdUYXyHmaDpOmDD0jJl5upCJlK_Wkr473gnsr0eKevFOw1mikeh364ExXFxKkjDSIJO3wc4hUtvkfzEoZP_Rzx6CUigCielKAlHiwpYB4cJU=w309-h232-no"}/
-            .carousel-caption.d-none.d-md-block
-              %h5 
-              %p 
-        %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleCaptions", :role => "button"}
-          %span.carousel-control-prev-icon{"aria-hidden" => "true"}
-          %span.sr-only Previous
-        %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleCaptions", :role => "button"}
-          %span.carousel-control-next-icon{"aria-hidden" => "true"}
-          %span.sr-only Next
-    %nav
-      #nav-tab.nav.nav-tabs.nave-tabs-xs.pt-4.d-flex.justify-content-around.flex-nowrap{:role => "tablist"}
-        %a#nav-home-tab.nav-item.nav-link.nav-link-xs.active{"aria-controls" => "nav-contact", "aria-selected" => "true", "data-toggle" => "tab", :href => "#nav1", :role => "tab"} 全て
-        %a#nav-profile-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav2", :role => "tab"} アダルト
-        %a#nav-contact-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav3", :role => "tab"} ヤングアダルト
-        %a#nav-contact-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav4", :role => "tab"} 中年
-        %a#nav-contact-tabs.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav5", :role => "tab"} スタッフ
-    #nav-tabContent.tab-content
-      #nav1.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab", :role => "tabpanel"} 
-        .row
+  .container
+    .bg-ivory.pt-4
+      .bd-example
+        #carouselExampleCaptions.carousel.slide{"data-ride" => "carousel"}
+          %ol.carousel-indicators
+            %li.active{"data-slide-to" => "0", "data-target" => "#carouselExampleCaptions"}
+            %li{"data-slide-to" => "1", "data-target" => "#carouselExampleCaptions"}
+            %li{"data-slide-to" => "2", "data-target" => "#carouselExampleCaptions"}
+          .carousel-inner
+            .carousel-item.active
+              = image_tag 'all.JPG', class: "img-responsived-block w-100"
+              .carousel-caption.d-none.d-md-block
+                %h1 龍風
+                %p 
+            .carousel-item
+              %img.d-block.w-100{:alt => "...", width: "90px", height: "220px", :src => "https://lh3.googleusercontent.com/ZRo-yfNQjEBzMSk2QHtRYy0tjaNz2nBwwBFy1Wh6VrF_dzROJkdiiLI9QE3VT8S_76-TEnm3XtFl4aS32Y0XG0MvQlctmDDlaIgjwvzQ7JEQ23kpPkbiPtiLNukjPxMPie4YoH2fRBmXGE71wrqizECHkJjuCCM4BMGkT2ILybI27GA2g4NJ8-eIMk69KAJczWK3PDhBocbEh3XvF38Yt65xFMLC7zmQb-xetr6np2xf6xHytyYUCwSSYbCIGsewslO5EtWKGzfvDOASqrOVkj7pN1zV-IqOaVasmWYKEsCDZkVdEARcAuishCo9t5DM-wnNQNG7mIOtDcQeov8nO_5HjSNR9pXFXaaRasPeRbQuvR_9m_x701HM9VQzzaNpgYFHmwYf9DAa36NuLEfBVFcyMjGWjI7A-TCkcVtYuTCMAzzBtuHgA7Y3JOnGMqCzHqD-kHEfb8NFUNZDtrLVB9HynZIeUFA_rwotQmjuhw1Pgfd0ALDU9PNfvEwuyWKredU3398xi7yywV3FuSsCA-zxkVHnTBu1OtDaiSstqU-iN37P3WBRdUYXyHmaDpOmDD0jJl5upCJlK_Wkr473gnsr0eKevFOw1mikeh364ExXFxKkjDSIJO3wc4hUtvkfzEoZP_Rzx6CUigCielKAlHiwpYB4cJU=w309-h232-no"}/
+              .carousel-caption.d-none.d-md-block
+                %h5 
+                %p 
+            .carousel-item
+              %img.d-block.w-100{:alt => "...", width: "90px", height: "220px", :src => "https://lh3.googleusercontent.com/ZRo-yfNQjEBzMSk2QHtRYy0tjaNz2nBwwBFy1Wh6VrF_dzROJkdiiLI9QE3VT8S_76-TEnm3XtFl4aS32Y0XG0MvQlctmDDlaIgjwvzQ7JEQ23kpPkbiPtiLNukjPxMPie4YoH2fRBmXGE71wrqizECHkJjuCCM4BMGkT2ILybI27GA2g4NJ8-eIMk69KAJczWK3PDhBocbEh3XvF38Yt65xFMLC7zmQb-xetr6np2xf6xHytyYUCwSSYbCIGsewslO5EtWKGzfvDOASqrOVkj7pN1zV-IqOaVasmWYKEsCDZkVdEARcAuishCo9t5DM-wnNQNG7mIOtDcQeov8nO_5HjSNR9pXFXaaRasPeRbQuvR_9m_x701HM9VQzzaNpgYFHmwYf9DAa36NuLEfBVFcyMjGWjI7A-TCkcVtYuTCMAzzBtuHgA7Y3JOnGMqCzHqD-kHEfb8NFUNZDtrLVB9HynZIeUFA_rwotQmjuhw1Pgfd0ALDU9PNfvEwuyWKredU3398xi7yywV3FuSsCA-zxkVHnTBu1OtDaiSstqU-iN37P3WBRdUYXyHmaDpOmDD0jJl5upCJlK_Wkr473gnsr0eKevFOw1mikeh364ExXFxKkjDSIJO3wc4hUtvkfzEoZP_Rzx6CUigCielKAlHiwpYB4cJU=w309-h232-no"}/
+              .carousel-caption.d-none.d-md-block
+                %h5 
+                %p 
+          %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleCaptions", :role => "button"}
+            %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+            %span.sr-only Previous
+          %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleCaptions", :role => "button"}
+            %span.carousel-control-next-icon{"aria-hidden" => "true"}
+            %span.sr-only Next
+      %nav
+        #nav-tab.nav.nav-tabs.nave-tabs-xs.pt-4.d-flex.justify-content-around.flex-nowrap{:role => "tablist"}
+          %a#nav-home-tab.nav-item.nav-link.nav-link-xs.active{"aria-controls" => "nav-contact", "aria-selected" => "true", "data-toggle" => "tab", :href => "#nav1", :role => "tab"} 全て
+          %a#nav-profile-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav2", :role => "tab"} アダルト
+          %a#nav-contact-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav3", :role => "tab"} ヤングアダルト
+          %a#nav-contact-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav4", :role => "tab"} 中年
+          %a#nav-contact-tabs.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav5", :role => "tab"} スタッフ
+      #nav-tabContent.tab-content
+        #nav1.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab", :role => "tabpanel"} 
+          = render 'all-member'
+        #nav2.tab-pane.fade{"aria-labelledby" => "nav-profile-tab", :role => "tabpanel"} 
           .col-md-6
-            .row.d-flex.align-items-center.border-bottom.p-2
-              = image_tag 'R-logo.jpg', class: "col-3"
-              .col-1.player-number.pl-1 30
-              .col-8.text.mb-auto 
-                %span.outfielder 内野手 / 右右  / 40歳
-                %span.name.d-block ツネさん
-                %span.text.d-block 監督 / スカウト 
-                %span.text.d-block 安北中(サッカー部)
-      #nav2.tab-pane.fade{"aria-labelledby" => "nav-profile-tab", :role => "tabpanel"} 
-        .col-md-6
-          .card.flex-md-row.mb-4
-            .card-body.d-flex.align-items-center
-              = image_tag 'tsune.jpg', size: '120x180'
-              .player-number.m-4 
-                %h3 30
-              %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-      #nav3.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
-        .col-md-6
-          .card.flex-md-row.mb-4
-            .card-body.d-flex.align-items-center
-              = image_tag 'tsune.jpg', size: '120x180'
-              .player-number.m-4 
-                %h3 30
-              %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-        .col-md-6
-          .card.flex-md-row.mb-4
-            .card-body.d-flex.align-items-center
-              = image_tag 'tsune.jpg', size: '120x180'
-              .player-number.m-4 
-                %h3 30
-              %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-      #nav4.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
-        .col-md-6
-          .card.flex-md-row.mb-4
-            .card-body.d-flex.align-items-center
-              = image_tag 'tsune.jpg', size: '120x180'
-              .player-number.m-4 
-                %h3 30
-              %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-        .col-md-6
-          .card.flex-md-row.mb-4
-            .card-body.d-flex.align-items-center
-              = image_tag 'tsune.jpg', size: '120x180'
-              .player-number.m-4 
-                %h3 30
-              %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-      #nav5.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
-        .col-md-6
-          .card.flex-md-row.mb-4
-            .card-body.d-flex.align-items-center
-              = image_tag 'tsune.jpg', size: '120x180'
-              .player-number.m-4 
-                %h3 30
-              %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-        .col-md-6
-          .card.flex-md-row.mb-4
-            .card-body.d-flex.align-items-center
-              = image_tag 'tsune.jpg', size: '120x180'
-              .player-number.m-4 
-                %h3 30
-              %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+            .card.flex-md-row.mb-4
+              .card-body.d-flex.align-items-center
+                = image_tag 'tsune.jpg', size: '100x100'
+                .player-number.m-3 
+                  %h3 30
+                .text
+                  %span.outfielder 内野手 / 右右  / 40歳
+                  %span.name.d-block ツネさん
+                  %span.player-text.d-block 監督 / スカウト 
+                  %span.player-text.d-block 安北中(サッカー部)
+        #nav3.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
+          .col-md-6
+            .card.flex-md-row.mb-4
+              .card-body.d-flex.align-items-center
+                = image_tag 'tsune.jpg', size: '120x180'
+                .player-number.m-4 
+                  %h3 30
+                %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+          .col-md-6
+            .card.flex-md-row.mb-4
+              .card-body.d-flex.align-items-center
+                = image_tag 'tsune.jpg', size: '120x180'
+                .player-number.m-4 
+                  %h3 30
+                %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+        #nav4.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
+          .col-md-6
+            .card.flex-md-row.mb-4
+              .card-body.d-flex.align-items-center
+                = image_tag 'tsune.jpg', size: '120x180'
+                .player-number.m-4 
+                  %h3 30
+                %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+          .col-md-6
+            .card.flex-md-row.mb-4
+              .card-body.d-flex.align-items-center
+                = image_tag 'tsune.jpg', size: '120x180'
+                .player-number.m-4 
+                  %h3 30
+                %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+        #nav5.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
+          .col-md-6
+            .card.flex-md-row.mb-4
+              .card-body.d-flex.align-items-center
+                = image_tag 'tsune.jpg', size: '120x180'
+                .player-number.m-4 
+                  %h3 30
+                %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+          .col-md-6
+            .card.flex-md-row.mb-4
+              .card-body.d-flex.align-items-center
+                = image_tag 'tsune.jpg', size: '120x180'
+                .player-number.m-4 
+                  %h3 30
+                %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
 
-    -#   %ul.nav.nav-tabs.pt-4.d-flex.justify-content-around
-    -#     %li.nav-item
-    -#       %a.nav-link.active{"data-toggle" => "tab", :href => "#tab1"} 全て
-    -#     %li.nav-item
-    -#       %a.nav-link{"data-toggle" => "tab", :href => "#tab2"} アダルト
-    -#     %li.nav-item
-    -#       %a.nav-link{"data-toggle" => "tab", :href => "#tab3"} ヤングアダルト
-    -#     %li.nav-item
-    -#       %a.nav-link{"data-toggle" => "tab", :href => "#tab4"} 中年🔞
-    -#     %li.nav-item
-    -#       %a.nav-link{"data-toggle" => "tab", :href => "#tab5"} スタッフ
-    -# .tab-content
-    -#   #tab1.tab-pane.active.d-flex
-    -#     .col-md-6
-    -#       .card.flex-md-row.mb-4
-    -#         .card-body.d-flex.align-items-center
-    -#           = image_tag 'tsune.jpg', size: '120x180'
-    -#           .player-number.m-4 
-    -#             %h3 30
-    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-    -#     .col-md-6
-    -#       .card.flex-md-row.mb-4
-    -#         .card-body.d-flex.align-items-center
-    -#           = image_tag 'tsune.jpg', size: '120x180'
-    -#           .player-number.m-4 
-    -#             %h3 30
-    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-    -#   #tab2.tab-pane.d-flex
-    -#     .col-md-6
-    -#       .card.flex-md-row.mb-4
-    -#         .card-body.d-flex.align-items-center
-    -#           = image_tag 'tsune.jpg', size: '120x180'
-    -#           .player-number.m-4 
-    -#             %h3 30
-    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-    -#     .col-md-6
-    -#       .card.flex-md-row.mb-4
-    -#         .card-body.d-flex.align-items-center
-    -#           = image_tag 'tsune.jpg', size: '120x180'
-    -#           .player-number.m-4 
-    -#             %h3 30
-    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-    -#   #tab3.tab-pane.d-flex
-    -#     .col-md-6
-    -#       .card.flex-md-row.mb-4
-    -#         .card-body.d-flex.align-items-center
-    -#           = image_tag 'tsune.jpg', size: '120x180'
-    -#           .player-number.m-4 
-    -#             %h3 30
-    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-    -#     .col-md-6
-    -#       .card.flex-md-row.mb-4
-    -#         .card-body.d-flex.align-items-center
-    -#           = image_tag 'tsune.jpg', size: '120x180'
-    -#           .player-number.m-4 
-    -#             %h3 30
-    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-    -#   #tab4.tab-pane.d-flex
-    -#     .col-md-6
-    -#       .card.flex-md-row.mb-4
-    -#         .card-body.d-flex.align-items-center
-    -#           = image_tag 'tsune.jpg', size: '120x180'
-    -#           .player-number.m-4 
-    -#             %h3 30
-    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-    -#     .col-md-6
-    -#       .card.flex-md-row.mb-4
-    -#         .card-body.d-flex.align-items-center
-    -#           = image_tag 'tsune.jpg', size: '120x180'
-    -#           .player-number.m-4 
-    -#             %h3 30
-    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-    -#   #tab5.tab-pane.d-flex
-    -#     .col-md-6
-    -#       .card.flex-md-row.mb-4
-    -#         .card-body.d-flex.align-items-center
-    -#           = image_tag 'tsune.jpg', size: '120x180'
-    -#           .player-number.m-4 
-    -#             %h3 30
-    -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-    .row
-      .col-md-8.blog-main
-        %h3.pb-3.mb-4.font-italic.border-bottom
-          From the Firehose
-        .blog-post
-          %h2.blog-post-title Sample blog post
-          %p.blog-post-meta
-            January 1, 2014 by
-            %a{:href => "#"} Mark
-          %p This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.
-          %hr/
-          %p
-            Cum sociis natoque penatibus et magnis
-            = succeed "," do
-              %a{:href => "#"} dis parturient montes
-          %blockquote
+      -#   %ul.nav.nav-tabs.pt-4.d-flex.justify-content-around
+      -#     %li.nav-item
+      -#       %a.nav-link.active{"data-toggle" => "tab", :href => "#tab1"} 全て
+      -#     %li.nav-item
+      -#       %a.nav-link{"data-toggle" => "tab", :href => "#tab2"} アダルト
+      -#     %li.nav-item
+      -#       %a.nav-link{"data-toggle" => "tab", :href => "#tab3"} ヤングアダルト
+      -#     %li.nav-item
+      -#       %a.nav-link{"data-toggle" => "tab", :href => "#tab4"} 中年🔞
+      -#     %li.nav-item
+      -#       %a.nav-link{"data-toggle" => "tab", :href => "#tab5"} スタッフ
+      -# .tab-content
+      -#   #tab1.tab-pane.active.d-flex
+      -#     .col-md-6
+      -#       .card.flex-md-row.mb-4
+      -#         .card-body.d-flex.align-items-center
+      -#           = image_tag 'tsune.jpg', size: '120x180'
+      -#           .player-number.m-4 
+      -#             %h3 30
+      -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      -#     .col-md-6
+      -#       .card.flex-md-row.mb-4
+      -#         .card-body.d-flex.align-items-center
+      -#           = image_tag 'tsune.jpg', size: '120x180'
+      -#           .player-number.m-4 
+      -#             %h3 30
+      -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      -#   #tab2.tab-pane.d-flex
+      -#     .col-md-6
+      -#       .card.flex-md-row.mb-4
+      -#         .card-body.d-flex.align-items-center
+      -#           = image_tag 'tsune.jpg', size: '120x180'
+      -#           .player-number.m-4 
+      -#             %h3 30
+      -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      -#     .col-md-6
+      -#       .card.flex-md-row.mb-4
+      -#         .card-body.d-flex.align-items-center
+      -#           = image_tag 'tsune.jpg', size: '120x180'
+      -#           .player-number.m-4 
+      -#             %h3 30
+      -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      -#   #tab3.tab-pane.d-flex
+      -#     .col-md-6
+      -#       .card.flex-md-row.mb-4
+      -#         .card-body.d-flex.align-items-center
+      -#           = image_tag 'tsune.jpg', size: '120x180'
+      -#           .player-number.m-4 
+      -#             %h3 30
+      -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      -#     .col-md-6
+      -#       .card.flex-md-row.mb-4
+      -#         .card-body.d-flex.align-items-center
+      -#           = image_tag 'tsune.jpg', size: '120x180'
+      -#           .player-number.m-4 
+      -#             %h3 30
+      -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      -#   #tab4.tab-pane.d-flex
+      -#     .col-md-6
+      -#       .card.flex-md-row.mb-4
+      -#         .card-body.d-flex.align-items-center
+      -#           = image_tag 'tsune.jpg', size: '120x180'
+      -#           .player-number.m-4 
+      -#             %h3 30
+      -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      -#     .col-md-6
+      -#       .card.flex-md-row.mb-4
+      -#         .card-body.d-flex.align-items-center
+      -#           = image_tag 'tsune.jpg', size: '120x180'
+      -#           .player-number.m-4 
+      -#             %h3 30
+      -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      -#   #tab5.tab-pane.d-flex
+      -#     .col-md-6
+      -#       .card.flex-md-row.mb-4
+      -#         .card-body.d-flex.align-items-center
+      -#           = image_tag 'tsune.jpg', size: '120x180'
+      -#           .player-number.m-4 
+      -#             %h3 30
+      -#           %p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+      .row
+        .col-md-8.blog-main
+          %h3.pb-3.mb-4.font-italic.border-bottom
+            From the Firehose
+          .blog-post
+            %h2.blog-post-title Sample blog post
+            %p.blog-post-meta
+              January 1, 2014 by
+              %a{:href => "#"} Mark
+            %p This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.
+            %hr/
             %p
-              Curabitur blandit tempus porttitor.
-              %strong Nullam quis risus eget urna mollis
-              ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-          %p
-            Etiam porta
-            %em sem malesuada magna
-            mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-          %h2 Heading
-          %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          %h3 Sub-heading
-          %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          %pre
-            %code Example code block
-          %p Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-          %h3 Sub-heading
-          %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          %ul
-            %li Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            %li Donec id elit non mi porta gravida at eget metus.
-            %li Nulla vitae elit libero, a pharetra augue.
-          %p Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-          %ol
-            %li Vestibulum id ligula porta felis euismod semper.
-            %li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            %li Maecenas sed diam eget risus varius blandit sit amet non magna.
-          %p Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-        / /.blog-post
-        .blog-post
-          %h2.blog-post-title Another blog post
-          %p.blog-post-meta
-            December 23, 2013 by
-            %a{:href => "#"} Jacob
-          %p
-            Cum sociis natoque penatibus et magnis
-            = succeed "," do
-              %a{:href => "#"} dis parturient montes
-          %blockquote
+              Cum sociis natoque penatibus et magnis
+              = succeed "," do
+                %a{:href => "#"} dis parturient montes
+            %blockquote
+              %p
+                Curabitur blandit tempus porttitor.
+                %strong Nullam quis risus eget urna mollis
+                ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
             %p
-              Curabitur blandit tempus porttitor.
-              %strong Nullam quis risus eget urna mollis
-              ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-          %p
-            Etiam porta
-            %em sem malesuada magna
-            mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-          %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-        / /.blog-post
-        .blog-post
-          %h2.blog-post-title New feature
-          %p.blog-post-meta
-            December 14, 2013 by
-            %a{:href => "#"} Chris
-          %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          %ul
-            %li Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            %li Donec id elit non mi porta gravida at eget metus.
-            %li Nulla vitae elit libero, a pharetra augue.
-          %p
-            Etiam porta
-            %em sem malesuada magna
-            mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-          %p Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-        / /.blog-post
-        %nav.blog-pagination
-          %a.btn.btn-outline-primary{:href => "#"} Older
-          %a.btn.btn-outline-secondary.disabled{:href => "#"} Newer
-      / /.blog-main
-      %aside.col-md-4.blog-sidebar
-        .p-3.mb-3.bg-light.rounded
-          %h4.font-italic About
-          %p.mb-0
-            Etiam porta
-            %em sem malesuada magna
-            mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-        .p-3
-          %h4.font-italic Archives
-          %ol.list-unstyled.mb-0
-            %li
-              %a{:href => "#"} March 2014
-            %li
-              %a{:href => "#"} February 2014
-            %li
-              %a{:href => "#"} January 2014
-            %li
-              %a{:href => "#"} December 2013
-            %li
-              %a{:href => "#"} November 2013
-            %li
-              %a{:href => "#"} October 2013
-            %li
-              %a{:href => "#"} September 2013
-            %li
-              %a{:href => "#"} August 2013
-            %li
-              %a{:href => "#"} July 2013
-            %li
-              %a{:href => "#"} June 2013
-            %li
-              %a{:href => "#"} May 2013
-            %li
-              %a{:href => "#"} April 2013
-        .p-3
-          %h4.font-italic Elsewhere
-          %ol.list-unstyled
-            %li
-              %a{:href => "#"} GitHub
-            %li
-              %a{:href => "#"} Twitter
-            %li
-              %a{:href => "#"} Facebook
-  = render 'footer'
-  
+              Etiam porta
+              %em sem malesuada magna
+              mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+            %h2 Heading
+            %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+            %h3 Sub-heading
+            %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            %pre
+              %code Example code block
+            %p Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+            %h3 Sub-heading
+            %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            %ul
+              %li Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+              %li Donec id elit non mi porta gravida at eget metus.
+              %li Nulla vitae elit libero, a pharetra augue.
+            %p Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+            %ol
+              %li Vestibulum id ligula porta felis euismod semper.
+              %li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              %li Maecenas sed diam eget risus varius blandit sit amet non magna.
+            %p Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+          / /.blog-post
+          .blog-post
+            %h2.blog-post-title Another blog post
+            %p.blog-post-meta
+              December 23, 2013 by
+              %a{:href => "#"} Jacob
+            %p
+              Cum sociis natoque penatibus et magnis
+              = succeed "," do
+                %a{:href => "#"} dis parturient montes
+            %blockquote
+              %p
+                Curabitur blandit tempus porttitor.
+                %strong Nullam quis risus eget urna mollis
+                ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            %p
+              Etiam porta
+              %em sem malesuada magna
+              mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+            %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          / /.blog-post
+          .blog-post
+            %h2.blog-post-title New feature
+            %p.blog-post-meta
+              December 14, 2013 by
+              %a{:href => "#"} Chris
+            %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            %ul
+              %li Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+              %li Donec id elit non mi porta gravida at eget metus.
+              %li Nulla vitae elit libero, a pharetra augue.
+            %p
+              Etiam porta
+              %em sem malesuada magna
+              mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+            %p Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+          / /.blog-post
+          %nav.blog-pagination
+            %a.btn.btn-outline-primary{:href => "#"} Older
+            %a.btn.btn-outline-secondary.disabled{:href => "#"} Newer
+        / /.blog-main
+        %aside.col-md-4.blog-sidebar
+          .p-3.mb-3.bg-light.rounded
+            %h4.font-italic About
+            %p.mb-0
+              Etiam porta
+              %em sem malesuada magna
+              mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+          .p-3
+            %h4.font-italic Archives
+            %ol.list-unstyled.mb-0
+              %li
+                %a{:href => "#"} March 2014
+              %li
+                %a{:href => "#"} February 2014
+              %li
+                %a{:href => "#"} January 2014
+              %li
+                %a{:href => "#"} December 2013
+              %li
+                %a{:href => "#"} November 2013
+              %li
+                %a{:href => "#"} October 2013
+              %li
+                %a{:href => "#"} September 2013
+              %li
+                %a{:href => "#"} August 2013
+              %li
+                %a{:href => "#"} July 2013
+              %li
+                %a{:href => "#"} June 2013
+              %li
+                %a{:href => "#"} May 2013
+              %li
+                %a{:href => "#"} April 2013
+          .p-3
+            %h4.font-italic Elsewhere
+            %ol.list-unstyled
+              %li
+                %a{:href => "#"} GitHub
+              %li
+                %a{:href => "#"} Twitter
+              %li
+                %a{:href => "#"} Facebook
+    = render 'footer'
+    
