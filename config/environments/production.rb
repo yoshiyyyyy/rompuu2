@@ -14,7 +14,7 @@ Rails.application.configure do
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
 
   # Include font files to Assets
-  config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+  config.assets.precompile << /\.(?:svg|eot|woff|ttf|TTF)$/
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false

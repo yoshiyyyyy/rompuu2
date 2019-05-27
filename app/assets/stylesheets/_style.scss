@@ -1,10 +1,12 @@
 @font-face {
   font-family: "Graceland Personal Use.ttf";
   src: url('Fonts/Graceland Personal Use.ttf') format('truetype');
-  font-family: "MLBBLOCK";
-  src: url('Fonts/MLBBLOCK.TTF') format('truetype');
+  font-family: "MLBASTRO";
+  src: font-url('MLBASTRO.TTF') format('truetype');
   font-family: "CANDY INC.";
   src: url('Fonts/CANDY___.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 .carousel{
   width:100%;  /*サイズ指定*/
@@ -46,7 +48,7 @@
 .mlb-font {
   color: #333333;
   font-size: 14px;
-  font-family: "MLBBLOCK";
+  font-family: "MLBASTRO";
 }
 
 .domain {
