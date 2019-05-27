@@ -46,10 +46,10 @@ Rails.application.configure do
   config.assets.quiet = true
 
   # Add the font path
-  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+  # config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
 
   # Include font files to Assets
-  config.assetsprecompile << /\.(?:svg|eot|woff|ttf)$/
+  # config.assetsprecompile << /\.(?:svg|eot|woff|ttf)$/
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
