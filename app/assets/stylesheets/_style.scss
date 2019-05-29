@@ -8,7 +8,7 @@
   font-weight: normal;
   font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lakki+Reddy|Staatliches&display=swap');
 .carousel{
   width:100%;  /*サイズ指定*/
   margin:auto;
@@ -16,14 +16,21 @@
 .body{
   font-size: 14px;
 }
+.R-logo{
+  font-family: 'Lakki Reddy', cursive;
+}
 .com {
   border-radius: 8px;
   border: 1px solid;
   font-size: 20px;
   padding: 2px;
-  font-family: 'Century Gothic';
+  font-family: "Fjalla One", sans-serif;
   font-weight: bold;
 }
+.footer{
+  font-family: "Fjalla One", sans-serif;
+}
+
 .carousel img{
   width:100%;
 }
@@ -41,7 +48,7 @@
 }
 .color-logo {
   color: #f6f134;
-  -webkit-text-stroke: 1px #000;
+  
   font-family: "Graceland Personal Use";
 }
 
@@ -52,7 +59,7 @@
 .mlb-font {
   color: #333333;
   font-size: 14px;
-  font-family: 'Staatliches', cursive;
+  font-family:  cursive;
 }
 
 .domain {
@@ -101,4 +108,12 @@
 .font-07{
   font-size: 0.7rem;
 }
- 
+.nav-tabs {
+  border-bottom : solid 4px !important;
+  border-color: #000 !important;
+}
+.max-height{
+  max-height: 40rem;
+  width: auto;
+}
+

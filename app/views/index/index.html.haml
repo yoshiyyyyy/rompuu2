@@ -1,20 +1,10 @@
 .body.bg-black
   .nav-scroller.mb-5
     .initial-header.d-flex.align-items-center.bg-ivory
-      .mlb-font.mx-auto WELCOME  TO  THE  OFFICIAL  SITE  OF  ROMPUU.
-    .row.blog-header.d-flex.align-items-center.justify-content-between.ml-5.mr-5
-      %i.col-4.color-logo Rom[puu
-      .col-xs-4.rompuu-logo.text-light.d-flex.align-items-end
-        .com.text-light rompuu.com
-        .registration ™
-    .navbar.mlb-font.d-inlineflex.justify-content-around
-      %a.text-light{:href => "#"} Top
-      %a.text-light{:href => "#"} Player
-      %a.text-light{:href => "#"} Team
-      %a.text-light{:href => "#"} Stats
-      %a.text-light{:href => "#"} Contact
+      .mlb-font.mx-auto THE  OFFICIAL  SITE  OF  ROMPUU.
+    =render 'header'
   .container
-    .bg-ivory.pt-4
+    .bg-ivory
       .bd-example
         #carouselExampleCaptions.carousel.slide{"data-ride" => "carousel"}
           %ol.carousel-indicators
@@ -23,17 +13,17 @@
             %li{"data-slide-to" => "2", "data-target" => "#carouselExampleCaptions"}
           .carousel-inner
             .carousel-item.active
-              = image_tag 'all.JPG', class: "img-responsived-block w-100"
+              = image_tag 'all.JPG', class: "img-responsived-block"
               .carousel-caption.d-none.d-md-block
                 %h1 龍風
                 %p 
             .carousel-item
-              %img.d-block.w-100{:alt => "...", width: "90px", height: "220px", :src => "https://lh3.googleusercontent.com/ZRo-yfNQjEBzMSk2QHtRYy0tjaNz2nBwwBFy1Wh6VrF_dzROJkdiiLI9QE3VT8S_76-TEnm3XtFl4aS32Y0XG0MvQlctmDDlaIgjwvzQ7JEQ23kpPkbiPtiLNukjPxMPie4YoH2fRBmXGE71wrqizECHkJjuCCM4BMGkT2ILybI27GA2g4NJ8-eIMk69KAJczWK3PDhBocbEh3XvF38Yt65xFMLC7zmQb-xetr6np2xf6xHytyYUCwSSYbCIGsewslO5EtWKGzfvDOASqrOVkj7pN1zV-IqOaVasmWYKEsCDZkVdEARcAuishCo9t5DM-wnNQNG7mIOtDcQeov8nO_5HjSNR9pXFXaaRasPeRbQuvR_9m_x701HM9VQzzaNpgYFHmwYf9DAa36NuLEfBVFcyMjGWjI7A-TCkcVtYuTCMAzzBtuHgA7Y3JOnGMqCzHqD-kHEfb8NFUNZDtrLVB9HynZIeUFA_rwotQmjuhw1Pgfd0ALDU9PNfvEwuyWKredU3398xi7yywV3FuSsCA-zxkVHnTBu1OtDaiSstqU-iN37P3WBRdUYXyHmaDpOmDD0jJl5upCJlK_Wkr473gnsr0eKevFOw1mikeh364ExXFxKkjDSIJO3wc4hUtvkfzEoZP_Rzx6CUigCielKAlHiwpYB4cJU=w309-h232-no"}/
+              = image_tag 'shimosan.jpg', class: "img-responsived-block"
               .carousel-caption.d-none.d-md-block
                 %h5 
                 %p 
             .carousel-item
-              %img.d-block.w-100{:alt => "...", width: "90px", height: "220px", :src => "https://lh3.googleusercontent.com/ZRo-yfNQjEBzMSk2QHtRYy0tjaNz2nBwwBFy1Wh6VrF_dzROJkdiiLI9QE3VT8S_76-TEnm3XtFl4aS32Y0XG0MvQlctmDDlaIgjwvzQ7JEQ23kpPkbiPtiLNukjPxMPie4YoH2fRBmXGE71wrqizECHkJjuCCM4BMGkT2ILybI27GA2g4NJ8-eIMk69KAJczWK3PDhBocbEh3XvF38Yt65xFMLC7zmQb-xetr6np2xf6xHytyYUCwSSYbCIGsewslO5EtWKGzfvDOASqrOVkj7pN1zV-IqOaVasmWYKEsCDZkVdEARcAuishCo9t5DM-wnNQNG7mIOtDcQeov8nO_5HjSNR9pXFXaaRasPeRbQuvR_9m_x701HM9VQzzaNpgYFHmwYf9DAa36NuLEfBVFcyMjGWjI7A-TCkcVtYuTCMAzzBtuHgA7Y3JOnGMqCzHqD-kHEfb8NFUNZDtrLVB9HynZIeUFA_rwotQmjuhw1Pgfd0ALDU9PNfvEwuyWKredU3398xi7yywV3FuSsCA-zxkVHnTBu1OtDaiSstqU-iN37P3WBRdUYXyHmaDpOmDD0jJl5upCJlK_Wkr473gnsr0eKevFOw1mikeh364ExXFxKkjDSIJO3wc4hUtvkfzEoZP_Rzx6CUigCielKAlHiwpYB4cJU=w309-h232-no"}/
+              = image_tag 'ritora.JPG', class: "img-responsived-block"
               .carousel-caption.d-none.d-md-block
                 %h5 
                 %p 
@@ -46,10 +36,10 @@
       %nav
         #nav-tab.nav.nav-tabs.nave-tabs-xs.pt-4.d-flex.justify-content-around.flex-nowrap{:role => "tablist"}
           %a#nav-home-tab.nav-item.nav-link.nav-link-xs.active{"aria-controls" => "nav-contact", "aria-selected" => "true", "data-toggle" => "tab", :href => "#nav1", :role => "tab"} 全て
-          %a#nav-profile-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav2", :role => "tab"} アダルト
-          %a#nav-contact-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav3", :role => "tab"} ヤングアダルト
-          %a#nav-contact-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav4", :role => "tab"} 中年
-          %a#nav-contact-tabs.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav5", :role => "tab"} スタッフ
+          %a#nav-profile-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav2", :role => "tab"} 投手
+          %a#nav-contact-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav3", :role => "tab"} 内野手
+          %a#nav-contact-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav4", :role => "tab"} 外野手
+          %a#nav-contact-tabs.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav5", :role => "tab"} マネさん
       #nav-tabContent.tab-content
         #nav1.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab", :role => "tabpanel"} 
           = render 'all-member'
@@ -318,5 +308,5 @@
                 %a{:href => "#"} Twitter
               %li
                 %a{:href => "#"} Facebook
-    = render 'footer'
+  = render 'footer'
     
