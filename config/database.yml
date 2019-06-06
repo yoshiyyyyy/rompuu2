@@ -53,5 +53,5 @@ production:
   username: rompuu2
   password: <%= ENV['ROMPUU2_DATABASE_PASSWORD'] %>
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   pool: 5
