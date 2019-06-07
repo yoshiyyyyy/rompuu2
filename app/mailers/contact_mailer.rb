@@ -1,7 +1,7 @@
 class ContactMailer < ApplicationMailer
-
+  default to: 'yoshimasahosoi1125@gmail.com' 
   def contact_mail(contact)
     @contact = contact  
-    mail to: ENV['MAIL'], subject: "お問い合わせ！"
+    mail(subject: 'webサイトよりメッセージが届きました') 
   end
 end
