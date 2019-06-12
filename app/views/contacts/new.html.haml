@@ -1,0 +1,11 @@
+= form_for @contact, url: contacts_create_path do |f|
+  .form-group.mt-3
+    %p.mb-0 返信先メールアドレス
+    = f.text_field :email, class: 'form-control'
+    - if @contact.errors.any?
+      %p 正しいメールアドレスを入力してくださいませ
+  .form-group
+    %p.mb-0 お問い合わせ内容 
+    %p.mb-0※ご指名の記入をお忘れなく！
+    = f.text_area :message, size: '10x10', class: 'form-control'
+  = f.submit '送信'

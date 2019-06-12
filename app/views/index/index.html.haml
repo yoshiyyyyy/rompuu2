@@ -1,5 +1,5 @@
-.body.bg-black
-  .nav-scroller.mb-5
+.body.bg-ivory
+  .nav-scroller.mb-5.shadow
     .initial-header.d-flex.align-items-center.bg-ivory
       .mlb-font.mx-auto THE  OFFICIAL  SITE  OF  ROMPUU
     =render 'header'
@@ -33,8 +33,10 @@
           %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleCaptions", :role => "button"}
             %span.carousel-control-next-icon{"aria-hidden" => "true"}
             %span.sr-only Next
-    .row-12.bg-ivory.shadow.mt-4
-      %nav
+    .row-12.mt-4.mb-2.bg-white.shadow.h-auto
+      .heading.text-center.ml-1.p-1 龍風選手一覧
+    .row-12.bg-white
+      %nav 
         #nav-tab.nav.nav-tabs.nave-tabs-xs.d-flex.justify-content-between.flex-nowrap{:role => "tablist"}
           %a#nav-home-tab.nav-item.nav-link.nav-link-xs.active{"aria-controls" => "nav-contact", "aria-selected" => "true", "data-toggle" => "tab", :href => "#nav1", :role => "tab"} 全て
           %a#nav-profile-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav2", :role => "tab"} 投手
@@ -52,7 +54,9 @@
           = render 'outfielder'
         #nav5.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
           = render 'supporters'
-    .row-12.bg-ivory.mt-5
+    .row-12.mt-4.mb-2.bg-white.shadow
+      .heading.text-center.ml-1.p-2 スケジュール
+    .row-12.bg-ivory
       .col-md-8.blog-main
         %h3.pb-3.mb-4.font-italic.border-bottom
           From the Firehose

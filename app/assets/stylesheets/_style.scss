@@ -37,6 +37,12 @@
 .bg-black{
   background-color: #000;
 }
+.bg-white{
+  background-color: #fff;
+}
+.pure_white{
+  color: #fff !important;
+}
 .bg-ivory{
   background-color: #ececec;
 }
@@ -76,7 +82,7 @@
 }
 .nav-link{
   color: #000;
-  background-color: #ececec;
+
 }
 .nav-link:hover{
   color: #000;
@@ -112,5 +118,9 @@
 .max-height{
   max-height: 40rem;
   width: auto;
+}
+.heading {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
