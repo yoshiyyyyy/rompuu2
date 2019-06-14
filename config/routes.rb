@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  resources :meetings
  root "index#index"
- get 'contacts/new' => 'contacts#new'
- post'contacts/create' => 'contacts#create'
+ resources :contacts
+#  get 'contacts/new' => 'contacts#new'
+#  post'contacts/create' => 'contacts#create'
+
 end

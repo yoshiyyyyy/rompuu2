@@ -63,3 +63,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'bootstrap', '~>4.3.1'
 gem 'sendgrid-ruby'
 gem 'pry-rails'
+gem "simple_calendar", "~> 2.0"
+gem 'jquery-rails', '4.3.3'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'

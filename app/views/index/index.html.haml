@@ -1,187 +1,58 @@
-.body.bg-ivory
-  .nav-scroller.mb-5.shadow
-    .initial-header.d-flex.align-items-center.bg-ivory
-      .mlb-font.mx-auto THE  OFFICIAL  SITE  OF  ROMPUU
-    =render 'header'
-  .container
-    .row-12
-      .bd-example
-        #carouselExampleCaptions.carousel.slide{"data-ride" => "carousel"}
-          %ol.carousel-indicators
-            %li.active{"data-slide-to" => "0", "data-target" => "#carouselExampleCaptions"}
-            %li{"data-slide-to" => "1", "data-target" => "#carouselExampleCaptions"}
-            %li{"data-slide-to" => "2", "data-target" => "#carouselExampleCaptions"}
-          .carousel-inner
-            .carousel-item.active
-              = image_tag 'all.JPG', class: "img-responsived-block"
-              .carousel-caption.d-none.d-md-block
-                %h1 龍風
-                %p 
-            .carousel-item
-              = image_tag 'shimosan.jpg', class: "img-responsived-block"
-              .carousel-caption.d-none.d-md-block
-                %h5 
-                %p 
-            .carousel-item
-              = image_tag 'ritora.JPG', class: "img-responsived-block"
-              .carousel-caption.d-none.d-md-block
-                %h5 
-                %p 
-          %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleCaptions", :role => "button"}
-            %span.carousel-control-prev-icon{"aria-hidden" => "true"}
-            %span.sr-only Previous
-          %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleCaptions", :role => "button"}
-            %span.carousel-control-next-icon{"aria-hidden" => "true"}
-            %span.sr-only Next
-    .row-12.mt-4.mb-2.bg-white.shadow.h-auto
-      .heading.text-center.ml-1.p-1 龍風選手一覧
-    .row-12.bg-white
-      %nav 
-        #nav-tab.nav.nav-tabs.nave-tabs-xs.d-flex.justify-content-between.flex-nowrap{:role => "tablist"}
-          %a#nav-home-tab.nav-item.nav-link.nav-link-xs.active{"aria-controls" => "nav-contact", "aria-selected" => "true", "data-toggle" => "tab", :href => "#nav1", :role => "tab"} 全て
-          %a#nav-profile-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav2", :role => "tab"} 投手
-          %a#nav-contact-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav3", :role => "tab"} 内野手
-          %a#nav-contact-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav4", :role => "tab"} 外野手
-          %a#nav-contact-tabs.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav5", :role => "tab"} 応援団
-      #nav-tabContent.tab-content
-        #nav1.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab", :role => "tabpanel"} 
-          = render 'all-member'
-        #nav2.tab-pane.fade{"aria-labelledby" => "nav-profile-tab", :role => "tabpanel"} 
-          = render 'pitcher'
-        #nav3.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
-          = render 'infielder'
-        #nav4.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
-          = render 'outfielder'
-        #nav5.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
-          = render 'supporters'
-    .row-12.mt-4.mb-2.bg-white.shadow
-      .heading.text-center.ml-1.p-2 スケジュール
-    .row-12.bg-ivory
-      .col-md-8.blog-main
-        %h3.pb-3.mb-4.font-italic.border-bottom
-          From the Firehose
-        .blog-post
-          %h2.blog-post-title Sample blog post
-          %p.blog-post-meta
-            January 1, 2014 by
-            %a{:href => "#"} Mark
-          %p This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.
-          %hr/
-          %p
-            Cum sociis natoque penatibus et magnis
-            = succeed "," do
-              %a{:href => "#"} dis parturient montes
-          %blockquote
-            %p
-              Curabitur blandit tempus porttitor.
-              %strong Nullam quis risus eget urna mollis
-              ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-          %p
-            Etiam porta
-            %em sem malesuada magna
-            mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-          %h2 Heading
-          %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          %h3 Sub-heading
-          %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          %pre
-            %code Example code block
-          %p Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-          %h3 Sub-heading
-          %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          %ul
-            %li Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            %li Donec id elit non mi porta gravida at eget metus.
-            %li Nulla vitae elit libero, a pharetra augue.
-          %p Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-          %ol
-            %li Vestibulum id ligula porta felis euismod semper.
-            %li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            %li Maecenas sed diam eget risus varius blandit sit amet non magna.
-          %p Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-        / /.blog-post
-        .blog-post
-          %h2.blog-post-title Another blog post
-          %p.blog-post-meta
-            December 23, 2013 by
-            %a{:href => "#"} Jacob
-          %p
-            Cum sociis natoque penatibus et magnis
-            = succeed "," do
-              %a{:href => "#"} dis parturient montes
-          %blockquote
-            %p
-              Curabitur blandit tempus porttitor.
-              %strong Nullam quis risus eget urna mollis
-              ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-          %p
-            Etiam porta
-            %em sem malesuada magna
-            mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-          %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-        / /.blog-post
-        .blog-post
-          %h2.blog-post-title New feature
-          %p.blog-post-meta
-            December 14, 2013 by
-            %a{:href => "#"} Chris
-          %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          %ul
-            %li Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            %li Donec id elit non mi porta gravida at eget metus.
-            %li Nulla vitae elit libero, a pharetra augue.
-          %p
-            Etiam porta
-            %em sem malesuada magna
-            mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-          %p Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-        / /.blog-post
-        %nav.blog-pagination
-          %a.btn.btn-outline-primary{:href => "#"} Older
-          %a.btn.btn-outline-secondary.disabled{:href => "#"} Newer
-      / /.blog-main
-      %aside.col-md-4.blog-sidebar
-        .p-3.mb-3.bg-light.rounded
-          %h4.font-italic About
-          %p.mb-0
-            Etiam porta
-            %em sem malesuada magna
-            mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-        .p-3
-          %h4.font-italic Archives
-          %ol.list-unstyled.mb-0
-            %li
-              %a{:href => "#"} March 2014
-            %li
-              %a{:href => "#"} February 2014
-            %li
-              %a{:href => "#"} January 2014
-            %li
-              %a{:href => "#"} December 2013
-            %li
-              %a{:href => "#"} November 2013
-            %li
-              %a{:href => "#"} October 2013
-            %li
-              %a{:href => "#"} September 2013
-            %li
-              %a{:href => "#"} August 2013
-            %li
-              %a{:href => "#"} July 2013
-            %li
-              %a{:href => "#"} June 2013
-            %li
-              %a{:href => "#"} May 2013
-            %li
-              %a{:href => "#"} April 2013
-        .p-3
-          %h4.font-italic Elsewhere
-          %ol.list-unstyled
-            %li
-              %a{:href => "#"} GitHub
-            %li
-              %a{:href => "#"} Twitter
-            %li
-              %a{:href => "#"} Facebook
-  = render 'footer'
-    
+.container.p-0
+  .row-12
+    .bd-example
+      #carouselExampleCaptions.carousel.slide{"data-ride" => "carousel"}
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#carouselExampleCaptions"}
+          %li{"data-slide-to" => "1", "data-target" => "#carouselExampleCaptions"}
+          %li{"data-slide-to" => "2", "data-target" => "#carouselExampleCaptions"}
+        .carousel-inner
+          .carousel-item.active
+            = image_tag 'all.JPG', class: "img-responsived-block"
+            .carousel-caption.d-none.d-md-block
+              %h1 龍風
+              %p 
+          .carousel-item
+            = image_tag 'shimosan.jpg', class: "img-responsived-block"
+            .carousel-caption.d-none.d-md-block
+              %h5 
+              %p 
+          .carousel-item
+            = image_tag 'ritora.JPG', class: "img-responsived-block"
+            .carousel-caption.d-none.d-md-block
+              %h5 
+              %p 
+        %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleCaptions", :role => "button"}
+          %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+          %span.sr-only Previous
+        %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleCaptions", :role => "button"}
+          %span.carousel-control-next-icon{"aria-hidden" => "true"}
+          %span.sr-only Next
+.container
+  .row-12.mt-4.mb-2.bg-white.shadow.h-auto
+    .heading.text-center.ml-1.p-1 龍風選手一覧
+  .row-12.bg-white
+    %nav 
+      #nav-tab.nav.nav-tabs.nave-tabs-xs.d-flex.justify-content-around.flex-nowrap{:role => "tablist"}
+        %a#nav-home-tab.nav-item.nav-link.nav-link-xs.active{"aria-controls" => "nav-contact", "aria-selected" => "true", "data-toggle" => "tab", :href => "#nav1", :role => "tab"} 全て
+        %a#nav-profile-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav2", :role => "tab"} 投手
+        %a#nav-contact-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav3", :role => "tab"} 内野手
+        %a#nav-contact-tab.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav4", :role => "tab"} 外野手
+        %a#nav-contact-tabs.nav-item.nav-link.nav-link-xs{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav5", :role => "tab"} 応援団
+    #nav-tabContent.tab-content
+      #nav1.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab", :role => "tabpanel"} 
+        = render 'all-member'
+      #nav2.tab-pane.fade{"aria-labelledby" => "nav-profile-tab", :role => "tabpanel"} 
+        = render 'pitcher'
+      #nav3.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
+        = render 'infielder'
+      #nav4.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
+        = render 'outfielder'
+      #nav5.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
+        = render 'supporters'
+  .row-12.mt-4.mb-2.bg-white.shadow
+    .heading.text-center.ml-1.p-2 スケジュール
+  .row-12.bg-white
+    %iframe{:frameborder => "0", :height => "600", :scrolling => "no", :src => "https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&src=eW9zaGltYXNhaG9zb2kxMTI1QGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=YmdpOTFmOWUzazNtc3UyZWU5ZGZvNmdoaGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%23616161&color=%230B8043&showTitle=0&showPrint=0&showTz=0&showNav=1&showTabs=0", :style => "border-width:0", :width => "100%"}
+= render 'footer'
+  

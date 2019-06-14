@@ -1,5 +1,7 @@
 {
   "name": "rompuu2",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@fullcalendar/daygrid": "^4.2.0"
+  }
 }
