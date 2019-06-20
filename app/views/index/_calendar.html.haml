@@ -1,0 +1,164 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "ie=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title Calendar
+    %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:400,600,700", :rel => "stylesheet"}/
+    %link{:href => "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css", :rel => "stylesheet"}/
+  %body
+    .main-container-wrapper
+      %main
+        .calendar-container
+          .calendar-container__header
+            %button.calendar-container__btn.calendar-container__btn--left{:title => "Previous"}
+              %i.icon.ion-ios-arrow-back
+            %h2.calendar-container__title October 2018
+            %button.calendar-container__btn.calendar-container__btn--right{:title => "Next"}
+              %i.icon.ion-ios-arrow-forward
+          .calendar-container__body
+            .calendar-table
+              .calendar-table__header
+                .calendar-table__row
+                  .calendar-table__col S
+                  .calendar-table__col M
+                  .calendar-table__col T
+                  .calendar-table__col W
+                  .calendar-table__col T
+                  .calendar-table__col F
+                  .calendar-table__col S
+              .calendar-table__body
+                .calendar-table__row
+                  .calendar-table__col.calendar-table__inactive
+                    .calendar-table__item
+                      %span 30
+                  .calendar-table__col.calendar-table__today
+                    .calendar-table__item
+                      %span 1
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 2
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 3
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 4
+                  .calendar-table__col.calendar-table__event
+                    .calendar-table__item
+                      %span 5
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 6
+                .calendar-table__row
+                  .calendar-table__col.calendar-table__event
+                    .calendar-table__item
+                      %span 7
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 8
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 9
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 10
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 11
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 12
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 13
+                .calendar-table__row
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 14
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 15
+                  .calendar-table__col.calendar-table__event.calendar-table__event--long.calendar-table__event--start
+                    .calendar-table__item
+                      %span 16
+                  .calendar-table__col.calendar-table__event.calendar-table__event--long
+                    .calendar-table__item
+                      %span 17
+                  .calendar-table__col.calendar-table__event.calendar-table__event--long.calendar-table__event--end
+                    .calendar-table__item
+                      %span 18
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 19
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 20
+                .calendar-table__row
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 21
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 22
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 23
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 24
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 25
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 26
+                  .calendar-table__col.calendar-table__event.calendar-table__event--long.calendar-table__event--start
+                    .calendar-table__item
+                      %span 27
+                .calendar-table__row
+                  .calendar-table__col.calendar-table__event.calendar-table__event--long.calendar-table__event--end
+                    .calendar-table__item
+                      %span 28
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 29
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 30
+                  .calendar-table__col
+                    .calendar-table__item
+                      %span 31
+                  .calendar-table__col.calendar-table__event.calendar-table__inactive
+                    .calendar-table__item
+                      %span 1
+                  .calendar-table__col.calendar-table__inactive
+                    .calendar-table__item
+                      %span 2
+                  .calendar-table__col.calendar-table__inactive
+                    .calendar-table__item
+                      %span 3
+        .events-container
+          %span.events__title 今月の予定
+          %ul.events__list
+            %li.events__item
+              .events__item--left
+                %span.events__name Town hall meeting
+                %span.events__date Oct 5
+              %span.events__tag 16:00
+            %li.events__item
+              .events__item--left
+                %span.events__name Meet with George
+                %span.events__date Oct 7
+              %span.events__tag 10:00
+            %li.events__item
+              .events__item--left
+                %span.events__name Vacation!!!
+                %span.events__date Oct 16 - Oct 18
+              %span.events__tag.events__tag--highlighted All day
+            %li.events__item
+              .events__item--left
+                %span.events__name Visit Grandma
+                %span.events__date Oct 27 - Oct 28

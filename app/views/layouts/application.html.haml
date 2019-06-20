@@ -7,35 +7,39 @@
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    %link{:href => "http://www.rompuu.com/fullcalendar.css", :rel => "stylesheet", :type => "text/css"}/
-    %script{:src => "http://www.rompuu.com/lib/moment.min.js"}
-    %script{:src => "http://www.rompuu.com/lib/jquery.min.js"}
-    %script{:src => "http://www.rompuu.com/fullcalendar.min.js"}
-    %script{:src => "http://www.rompuu.com/gcal.min.js"}
-    %script{:src => "http://www.rompuu.com/lang/ja.js"}
-    %script{:src => "http://www.rompuu.com/locale/ja.js"}
+    %script{:src => "https://cdn.jsdelivr.net/npm/vue/dist/vue.js"}
+    
+    
 
-    :javascript
-      $(document).ready(function() {
-        $('#calendar').fullCalendar({
-          header: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'month,listYear'
-          },
-          displayEventTime: false, 
-          googleCalendarApiKey: 'AIzaSyArpgY1krxRKdI1c9GtZb5Afu32SKgJJE4',
-          events: 'bgi91f9e3k3msu2ee9dfo6ghhc@group.calendar.google.com',
-          eventClick: function(event) {
-            // opens events in a popup window
-            window.open(event.url, 'gcalevent', 'width=700,height=600');
-            return false;
-          },
-          loading: function(bool) {
-            $('#loading').toggle(bool);
-          }
-        });
-      });
+    -# %link{:href => "http://www.rompuu.com/fullcalendar.css", :rel => "stylesheet", :type => "text/css"}/
+    -# %script{:src => "http://www.rompuu.com/lib/moment.min.js"}
+    -# %script{:src => "http://www.rompuu.com/lib/jquery.min.js"}
+    -# %script{:src => "http://www.rompuu.com/fullcalendar.min.js"}
+    -# %script{:src => "http://www.rompuu.com/gcal.min.js"}
+    -# %script{:src => "http://www.rompuu.com/lang/ja.js"}
+    -# %script{:src => "http://www.rosmpuu.com/locale/ja.js"}
+
+    -# :javascript
+    -#   $(document).ready(function() {
+    -#     $('#calendar').fullCalendar({
+    -#       header: {
+    -#         left: 'prev,next today',
+    -#         center: 'title',
+    -#         right: 'month,listYear'
+    -#       },
+    -#       displayEventTime: false, 
+    -#       googleCalendarApiKey: 'AIzaSyArpgY1krxRKdI1c9GtZb5Afu32SKgJJE4',
+    -#       events: 'bgi91f9e3k3msu2ee9dfo6ghhc@group.calendar.google.com',
+    -#       eventClick: function(event) {
+    -#         // opens events in a popup window
+    -#         window.open(event.url, 'gcalevent', 'width=700,height=600');
+    -#         return false;
+    -#       },
+    -#       loading: function(bool) {
+    -#         $('#loading').toggle(bool);
+    -#       }
+    -#     });
+    -#   });
 
 
     / Bootstrap CSS
@@ -43,9 +47,15 @@
     %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"}
+   
+  
+      
   .body.bg-ivory
     .nav-scroller.mb-3.shadow
       .initial-header.d-flex.align-items-center.bg-ivory
         .mlb-font.mx-auto THE  OFFICIAL  SITE  OF  ROMPUU
       =render 'index/header'
     = yield
+  
+
+
