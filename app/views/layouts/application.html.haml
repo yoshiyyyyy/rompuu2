@@ -8,6 +8,8 @@
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     %script{:src => "https://cdn.jsdelivr.net/npm/vue/dist/vue.js"}
+    = javascript_pack_tag 'hello_vue', 'data-turbolinks-track': 'reload'
+    
     
     
 
@@ -56,6 +58,7 @@
         .mlb-font.mx-auto THE  OFFICIAL  SITE  OF  ROMPUU
       =render 'index/header'
     = yield
+    
   
 
 

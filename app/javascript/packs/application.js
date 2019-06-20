@@ -16,15 +16,3 @@
 // const imagePath = (name) => images(name, true)
 
 console.log('Hello World from Webpacker')
-
-import './hello_react'
-
-var MyComponent = Vue.extend({
-  template: '<div>A custom component!</div>'
-})
-// 登録する
-Vue.component('my-component', MyComponent)
-// root インスタンスを作成する
-new Vue({
-  el: '#example'
-})

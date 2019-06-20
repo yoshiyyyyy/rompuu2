@@ -46,6 +46,8 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  config.x.webpacker[:digesting] = true
+
   # Add the font path
   # config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
 
