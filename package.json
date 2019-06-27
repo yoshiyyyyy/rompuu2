@@ -9,7 +9,13 @@
     "vue-template-compiler": "^2.6.10"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.4",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
-  }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yoshimasa1125/rompuu2.git",
+  "author": "yoshimasa1125 <yoshimasahosoi1125@gmail.com>",
+  "license": "MIT"
 }

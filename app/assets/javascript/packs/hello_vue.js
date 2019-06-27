@@ -5,27 +5,27 @@
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
-import Vue from 'vue'
-import App from '../app.vue'
+// import Vue from 'vue'
+// import App from '../app.vue'
 
-document.addEventListener('DOMContentLoaded', () => {
-  const app = new Vue({
-    render: h => h(App)
-  }).$mount()
-  document.body.appendChild(app.$el)
+// document.addEventListener('DOMContentLoaded', () => {
+//   const app = new Vue({
+//     render: h => h(App)
+//   }).$mount()
+//   document.body.appendChild(app.$el)
 
-  console.log(app)
-})
+//   console.log(app)
+// })
 
-var MyComponent = Vue.extend({
-  template: '<div>A custom component!</div>'
-})
-// 登録する
-Vue.component('my-component', MyComponent)
-// root インスタンスを作成する
-new Vue({
-  el: '#example'
-})
+// var MyComponent = Vue.extend({
+//   template: '<div>A custom component!</div>'
+// })
+// // 登録する
+// Vue.component('my-component', MyComponent)
+// // root インスタンスを作成する
+// new Vue({
+//   el: '#example'
+// })
 
 
 // The above code uses Vue without the compiler, which means you cannot
@@ -42,18 +42,18 @@ new Vue({
 // </div>
 
 
-// import Vue from 'vue/dist/vue.esm'
-// import App from '../app.vue'
-//
-// document.addEventListener('DOMContentLoaded', () => {
-//   const app = new Vue({
-//     el: '#hello',
-//     data: {
-//       message: "Can you say hello?"
-//     },
-//     components: { App }
-//   })
-// })
+import Vue from 'vue/dist/vue.esm'
+import App from '../app.vue'
+
+document.addEventListener('DOMContentLoaded', () => {
+  const app = new Vue({
+    el: '#hello',
+    data: {
+      message: "Can you say hello?"
+    },
+    components: { App }
+  })
+})
 //
 //
 //
