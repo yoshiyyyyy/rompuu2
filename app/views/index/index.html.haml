@@ -68,11 +68,9 @@
   .row-12.mt-4.mb-2.bg-white.shadow
     .heading.text-center.ml-1.p-2 スケジュール
   .row-12.bg-white
-    #hello
-      {{message}}
     -# #calendar
     -# %iframe{:frameborder => "0", :height => "600", :scrolling => "no", :src => "https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&src=eW9zaGltYXNhaG9zb2kxMTI1QGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=YmdpOTFmOWUzazNtc3UyZWU5ZGZvNmdoaGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230BBCB2&color=%2333B694&color=%23979797&color=%23007D39&showTitle=0&showDate=0&showPrint=0&showTz=0&showTabs=0&showNav=1", :style => "border-width:0", :width => "100%"}
     = render 'calendar'
-    = javascript_pack_tag 'hello_vue'
+    -# = javascript_pack_tag 'hello_vue'
 = render 'footer'
   
